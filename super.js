@@ -111,7 +111,7 @@ var Cluster = {
     // .rotateWorker()
     0: function() {
       if (this._roles._ && this._roles._.length > 0) {
-        if (this._rotate._ > this._roles._.length) {
+        if (this._rotate._ >= this._roles._.length) {
           this._rotate._ = 0;
         }
         return this._roles._[ this._rotate._++ ];
@@ -121,7 +121,7 @@ var Cluster = {
     // .rotateWorker(role)
     s: function(role) {
       if (this._roles[role] && this._roles[role].length > 0) {
-        if (this._rotate[role] > this._roles[role].length) {
+        if (this._rotate[role] >= this._roles[role].length) {
           this._rotate[role] = 0;
         }
         return this._roles[role][ this._rotate[role]++ ];

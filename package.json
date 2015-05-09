@@ -1,8 +1,17 @@
 {
   "name": "bauer-cluster-super",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin for bauer-cluster to enhance worker management.",
-  "keywords": ["multi-thread","multi-core","process","fork","multi-process","cluster","request","worker"],
+  "keywords": [
+    "multi-thread",
+    "multi-core",
+    "process",
+    "fork",
+    "multi-process",
+    "cluster",
+    "request",
+    "worker"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/yneves/node-bauer-cluster-super",
   "author": {
@@ -10,7 +19,7 @@
     "url": "http://yneves.com/",
     "email": "npm@yneves.com"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/yneves/node-bauer-cluster-super.git"
   },
@@ -18,13 +27,10 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": ">=1.0.0"
+    "bauer-cluster": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-factory": ">=1.1.0"
-  },
-  "devDependencies": {
-    "bauer-cluster": ">=1.0.0"
+    "bauer-factory": "^1.2.8"
   },
   "main": "super.js"
 }
