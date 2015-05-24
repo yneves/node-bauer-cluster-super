@@ -20,7 +20,6 @@ describe("Super",function() {
 		});
 		proc.on("exit",function() {
 			assert.equal(error,"");
-			// assert.equal(output,"");
 			done();
 		});
 	});

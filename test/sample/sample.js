@@ -1,8 +1,12 @@
 // - -------------------------------------------------------------------- - //
 
-var cluster = require("bauer-cluster");
+"use strict";
 
-cluster.require("../../");
+var mod = require("bauer-cluster");
+
+var cluster = new mod.Cluster();
+
+cluster.require("../../../");
 
 cluster.master(function() {
 
