@@ -10,16 +10,16 @@ cluster.require("../../../");
 
 cluster.master(function() {
 
-  this.superFork({
+  var workers = this.superFork({
     one: 1,
     two: 2,
     three: 3,
   });
 
-  process.stdout.write("ws." + cluster.workers.length);
+  process.stdout.write("ws." + workers.length);
 
-  var waiting = cluster.workers.length;
-  cluster.workers.forEach(function(worker,index) {
+  var waiting = workers.length;
+  workers.forEach(function(worker,index) {
     worker.on("message",function(message) {
       if (message == this.config.role) {
         process.stdout.write("ok." + index);
