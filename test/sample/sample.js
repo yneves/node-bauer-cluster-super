@@ -21,7 +21,7 @@ cluster.master(function() {
   var waiting = workers.length;
   workers.forEach(function(worker,index) {
     worker.on("message",function(message) {
-      if (message == this.config.role) {
+      if (message == this.args[0]) {
         process.stdout.write("ok." + index);
         if (--waiting == 0) {
           cluster.superKill();
@@ -41,7 +41,7 @@ cluster.worker(function(worker) {
 
   worker.on("message",function(message) {
     process.stdout.write(message);
-    this.send(this.config.role);
+    this.send(this.args[0]);
   });
 
 });
