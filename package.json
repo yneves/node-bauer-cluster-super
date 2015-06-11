@@ -1,6 +1,6 @@
 {
   "name": "bauer-cluster-super",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Plugin for bauer-cluster to enhance worker management.",
   "keywords": [
     "multi-thread",
