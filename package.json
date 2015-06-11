@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "bauer-cluster": "^1.2.1",
-    "bauer-factory": "^2.0.0"
+    "bauer-factory": "^2.0.3"
   },
   "main": "lib/index.js"
 }
