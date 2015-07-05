@@ -1,6 +1,6 @@
 {
   "name": "bauer-cluster-super",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Plugin for bauer-cluster to enhance worker management.",
   "keywords": [
     "multi-thread",
@@ -27,7 +27,6 @@
     "test": "mocha"
   },
   "dependencies": {
-    "bauer-cluster": "^1.2.1",
     "bauer-factory": "^2.0.3"
   },
   "main": "lib/index.js"
