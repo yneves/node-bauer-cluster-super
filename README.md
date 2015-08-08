@@ -54,6 +54,24 @@ myCluster.worker(function(worker) {
 myCluster.start();
 ```
 
+## API Summary
+
+  * `Cluster`
+    * `.setupSuper() :void`
+    * `.superFork(roles Object) :Array`
+    * `.superFork(count Number) :Array`
+    * `.superFork(count Number, role String) :Array`
+    * `.superFork(count Number, args Array) :Array`
+    * `.superKill() :void`
+    * `.superKill(role String) :void`
+    * `.registerWorker(worker Worker) :void`
+    * `.unregisterWorker(worker Worker) :void`
+    * `.rotateWorker() :Worker`
+    * `.rotateWorker(role String) :Worker`
+    * `.randomWorker() :Worker`
+    * `.randomWorker(role String) :Worker`
+
+
 ## License
 
 [MIT](./LICENSE)
