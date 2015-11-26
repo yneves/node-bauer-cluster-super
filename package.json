@@ -1,6 +1,6 @@
 {
   "name": "bauer-cluster-super",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Plugin for bauer-cluster to enhance worker management.",
   "keywords": [
     "multi-thread",
@@ -17,7 +17,7 @@
   "author": {
     "name": "Yuri Neves Silveira",
     "url": "http://yneves.com/",
-    "email": "npm@yneves.com"
+    "email": "yurinevessilveira@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "bauer-factory": "^2.0.3"
+    "bauer-factory": "^2.0.4"
   },
   "main": "lib/index.js"
 }
